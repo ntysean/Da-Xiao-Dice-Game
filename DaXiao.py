@@ -243,6 +243,27 @@ while bankroll != 0:
     else:
         print("Invalid amount! Bet what you can afford!")
         continue
-    bet()
+    betlod = bet()
     dicetotal=rolldice()
     dicetotaltemp = dicetotal[0]+dicetotal[1]+dicetotal[2]
+    print("The result is ",betlod)
+    if betlod == "small":
+        if dicetotaltemp >= 4 and dicetotaltemp <= 10:
+            print("Nice lah! You won $",betamount)
+            bankroll+=betamount*2
+        else:
+            print("Bad luck mate! XD")
+    elif betlod == "big":
+        if dicetotaltemp >=11 and dicetotaltemp<18:
+            print("Cool beans! You won $", betamount)
+            bankroll+=betamount*2
+        else:
+            print("Haix unlucky! Lose loh!")
+
+
+
+
+
+
+
+
