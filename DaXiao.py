@@ -102,7 +102,6 @@ while bankroll != 0:
     betlod = bet()
     dicetotal=rolldice()
     dicetotaltemp = dicetotal[0]+dicetotal[1]+dicetotal[2]
-    print("The result is ",betlod)
     if betlod == "small":
         if dicetotaltemp >= 4 and dicetotaltemp <= 10:
             print("Nice lah! You won $",betamount)
